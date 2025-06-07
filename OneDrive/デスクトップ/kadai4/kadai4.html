@@ -8,49 +8,47 @@
   </head>
   <body>
     <header>
-      <div class="keyvisual">
+      <h1 class="keyvisual">
         <img src="https://placehold.jp/110x45.png" alt="ロゴ画像">
-      </div>
+      </h1>
     </header>
     <main>
-      <div class="inner title_inner">
-        <h1>A special, long article in a newspaper or magazine</h1>
+      <section id="magazine" class="inner">
+        <h2 class="sec-title">A special, long article in a newspaper or magazine</h2>
         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
         テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-      </div>
-      <div class="inner menu_inner">
-        <div class="menu">
-          <a href="#">
-            <div class="archive">
-              <div class="textbox">
-                <h2>Archive</h2>
-                <p>テキストテキストテキストテキスト<br>テキストテキストテキスト</p>
-              </div>
+        <div class="flex-item">
+          <a class="item" href="#">
+            <img src="https://placehold.jp/500x500.png" alt="テキストテキストテキストテキスト">
+            <div class="text_box">
+              <p class="title">Archive</p>
+              <p>テキストテキストテキストテキスト<br>テキストテキストテキスト</p>
             </div>
           </a>
-          <a href="#">
-            <div class="new">
-              <div class="textbox">
-                <h2>New</h2>
-                <p>テキストテキストテキストテキスト<br>テキストテキストテキスト</p>
-              </div>
+          <a class="item" href="#">
+            <div class="text_box">
+              <p class="title">New</p>
+              <p>テキストテキストテキストテキスト<br>テキストテキストテキスト</p>
             </div>
+            <img src="https://placehold.jp/500x500.png" alt="テキストテキストテキストテキスト">
           </a>
         </div>
-      </div>
-      <div class="inner fashion_style_inner">
-        <div class="fashion_style_text">
-          <h1>Fashion & Style</h1>
+      </section>
+      <section id="fashion_style">
+        <div class="inner">
+          <h2 class="sec-title">Fashion & Style</h2>
           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
           テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <a href="#"><div class="btn">Read More</div></a>
+          <a class="btn" href="#">Read More</a>
         </div>
-      </div>
-      <div class="inner catalog_antique_inner">
-        <div class="catalog">
-          <img src="https://placehold.jp/500x500.png" alt="catalog画像">
-          <div class="catalog_text">
-            <h2>Catalog</h2>
+      </section>
+      <section class="catalog_antique">
+        <div class="flex_item inner">
+          <div class="item">
+            <img src="https://placehold.jp/500x500.png" alt="catalog画像">
+          </div>
+          <div class="item">
+            <h2 class="sec-title">Catalog</h2>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキストテキストテキストテキストテキスト</p>
@@ -62,45 +60,52 @@
             テキストテキストテキストテキストテキストテキストテキスト</p>
           </div>
         </div>
-        <div class="antique">
-          <div class="antique_text">
-            <h2>Antique</h2>
+      </section>
+      <section class="catalog_antique">
+        <div class="flex_item inner">
+          <div class="item">
+            <h2 class="sec-title">Antique</h2>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキストテキストテキストテキストテキスト</p>
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキストテキストテキストテキストテキスト</p>
-            <a href="#"><div class="antique_btn">Read More</div></a>
+            <a class="btn" href="#">Read More</a>
           </div>
-          <img src="https://placehold.jp/500x500.png" alt="antique画像">
+          <div class="item">
+            <img src="https://placehold.jp/500x500.png" alt="antique画像">
+          </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
-      <div class="inner summary_inner">
-        <div class="summary">
-          <img src="https://placehold.jp/110x45.png" alt="ロゴ画像">
+      <div class="flex_item inner">
+        <div class="item">
+          <a href="kadai4.html">
+            <img src="https://placehold.jp/110x45.png" alt="ロゴ画像">
+          </a>
         </div>
-        <div class="list">
-          <h4>タイトル</h4>
+        <div class="item">
+          <p class="footer_title">タイトル</p>
           <ul>
-            <li>-  テキストテキストテキスト</li>
-            <li>-  テキストテキストテキスト</li>
-            <li>-  テキストテキストテキスト</li>
-            <li>-  テキストテキストテキスト</li>
-            <li>-  テキストテキストテキスト</li>
+            <li>テキストテキストテキスト</li>
+            <li>テキストテキストテキスト</li>
+            <li>テキストテキストテキスト</li>
+            <li>テキストテキストテキスト</li>
+            <li>テキストテキストテキスト</li>
           </ul>
         </div>
-        <div class="text">
-          <h4>タイトルタイトルタイトル</h4>
-          <p>テキストテキストテキストテキストテキストテキストテキスト<br>
-          テキストテキストテキストテキストテキストテキストテキスト<br>
-          テキストテキストテキストテキストテキストテキストテキスト<br>
+        <div class="item">
+          <p class="footer_title">タイトルタイトルタイトル</p>
+          <p>テキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキスト
           テキストテキストテキストテキストテキストテキスト</p>
         </div>
       </div>
-      <p>© Mag88</p>
+      <p class="copyright">© Mag88</p>
     </footer>
+    <span id="isear-executed" style="display: none;">true</span>
   </body>
 </html>
