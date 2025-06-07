@@ -1,0 +1,234 @@
+
+.keyvisual {
+  background: url(https://placehold.jp/1500x750.png) no-repeat;
+  width: 1500px;
+  height: 750px;
+}
+
+.keyvisual img {
+  position: absolute;
+  top:40px;
+  right: 40px;
+}
+
+.title_inner {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.title_inner h1 {
+  font-size: 23px;
+  color: gray;
+}
+
+.title_inner p {
+  font-size: 14px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.menu h2,p {
+  margin: 0;
+  align-items: center;
+}
+
+.archive {
+  position: relative;
+  background: url(https://placehold.jp/500x500.png) no-repeat;
+  width: 500px;
+  height: 500px;
+  margin-right: 25px;
+}
+
+.archive:hover {
+  opacity: 0.5;
+}
+
+.new {
+  position: relative;
+  background: url(https://placehold.jp/500x500.png) no-repeat;
+  width: 500px;
+  height: 500px;
+}
+
+.new:hover {
+  opacity: 0.5;
+}
+
+.textbox {
+  background: rgba(0,0,0,0.5);
+  padding: 18px;
+  width: 280px;
+  color: #fff;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.textbox h2 {
+  font-size: 20px;
+}
+
+.textbox p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.fashion_style_inner {
+  position: relative;
+  background: url(https://placehold.jp/1500x500.png) no-repeat;
+  width: 1500px;
+  height: 500px;
+  margin-bottom: 80px;
+}
+
+.fashion_style_text {
+  position: absolute;
+  top: 50px;
+  left: 50%; 
+  transform: translate(-50%,0); 
+  text-align: center;
+}
+
+.fashion_style_text h1 {
+  font-size: 23px;
+  color: gray;
+}
+
+.fashion_style_text p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  position: absolute;
+  left: 50%; 
+  transform: translate(-50%,0); 
+  color: #000;
+  font-size: 13px;
+  text-decoration: none;
+  border: solid 1px #000;
+  padding: 10px 35px;
+}
+
+.catalog_antique_inner {
+  background-color: beige;
+}
+
+.catalog {
+  display: flex;
+  justify-content: center;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.catalog_text {
+  margin: 60px 0 60px 40px;
+  width: 500px;
+}
+
+.catalog p {
+  padding-bottom: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.antique {
+  display: flex;
+  justify-content: center;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.antique_text {
+  position: relative;
+  margin: 60px 40px 60px 0;
+  width: 500px; 
+}
+
+.antique p {
+  padding-bottom: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.antique_btn {
+  position: absolute;
+  left: 50%; 
+  transform: translate(-50%,0); 
+  color: #000;
+  font-size: 13px;
+  text-decoration: none;
+  border: solid 1px #000;
+  padding: 10px 35px;
+  margin-top: 35px;
+}
+
+.summary_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 350px;
+  background-color: black;
+  color: #fff;
+}
+
+.text {
+  font-size: 13px;
+  text-align: left;
+}
+
+.list ul li {
+  font-size: 13px;
+  list-style-type: none;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin: 30px 0;
+}
+
+@media screen and (max-width: 425px) {
+  .inner {
+    width: 100%;
+  }
+  .menu {
+    flex-direction: column;
+  }
+
+  .archive {
+    width: 100%;
+  }
+
+  .new {
+    width: 100%;
+  }
+
+  .catalog {
+    flex-direction: column;
+  }
+
+  .catalog_text {
+    width: 100%;
+  }
+
+  .antique {
+    flex-direction: column;
+  }
+
+  .antique_text {
+    width: 100%;
+  }
+  
+  .summary {
+    flex-direction: column;
+  }
+}
