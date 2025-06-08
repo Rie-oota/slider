@@ -8,57 +8,62 @@
   </head>
   <body>
     <header>
-      <nav>
-        <img src="https://placehold.jp/110x45.png" alt="ロゴ画像">
-        <ul>
-          <li>
-            <a href="#news">NEWS</a>
-          </li>
-          <li>
-            <a href="#about">ABOUT</a>
-          </li>
-          <li>
-            <a href="#business">BUSINESS</a>
-          </li>
-          <li>
-            <a href="#company">COMPANY</a>
-          </li>
-        </ul>
-        <a class="btn" href="#">お問い合わせ</a>
-      </nav>
+      <div class="inner wrapper">
+        <h1 class="logo">
+          <a href="kadai5.html">
+            <img src="https://placehold.jp/110x45.png" alt="ロゴ画像">
+          </a>
+        </h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#news">NEWS</a>
+            </li>
+            <li>
+              <a href="#about">ABOUT</a>
+            </li>
+            <li>
+              <a href="#business">BUSINESS</a>
+            </li>
+            <li>
+              <a href="#company">COMPANY</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <a class="btn" href="#">お問い合わせ</a>
     </header>
     <main>
       <div class="keyvisual">
         <img src="https://placehold.jp/1500x750.png">
       </div>
       <section id="news" class="wrapper">
-        <div class="title">
-          <h1>NEWS</h1>
-          <h2>ニュース</h2>
-        </div>
-        <div class="title_bar"></div>
-        <div class="news_list">
-          <div class="topics">
-            <div class="topics_flex">
-              <h3>2021.01.01</h3>
-              <h4>NEWS</h4>
+        <h2 class="section-title">
+          <span class="en">NEWS</span>
+          <span class="ja">ニュース</span>
+        </h2>
+        <ul class="news_list">
+          <li>
+            <div class="topics">
+              <time datetime="2021-01-01">2021.01.01</time>
+              <span>NEWS</span>
             </div>
-            <h5>タイトルタイトルタイトルタイトル</h5>
-          </div>
-          <div class="topics">
-            <div class="topics_flex">
-              <h3>2021.01.01</h3>
-              <h4>PRESS</h4>
+            <p>タイトルタイトルタイトルタイトル</p>
+          </li>
+          <li>
+            <div class="topics">
+              <time datetime="2021-01-01">2021.01.01</time>
+              <span>PRESS</span>
             </div>
-            <h5>タイトルタイトルタイトルタイトル</h5>
-          </div>
-          <div class="topics">
-            <div class="topics_flex">
-              <h3>2021.01.01</h3>
-              <h4>NEWS</h4>
+            <p>タイトルタイトルタイトルタイトル</p>
+          </li>
+          <li>
+            <div class="topics">
+              <time datetime="2021-01-01">2021.01.01</time>
+              <span>NEWS</span>
             </div>
-            <h5>タイトルタイトルタイトルタイトル</h5>
-          </div>
+            <p>タイトルタイトルタイトルタイトル</p>
+          </li>
         </div>
       </section>
       <section id="about">
@@ -66,48 +71,49 @@
           <img src="https://placehold.jp/800x400.png" alt="メニュー画像">
         </div>
         <div class="about_content">
-          <div class="about_title">
-            <h1>ABOUT</h1>
-            <h2>私たちについて</h2>
-          </div>
-          <div class="title_bar"></div>
-          <div class="about_text">
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
-              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
-              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </div>
+          <h2 class="section-title">
+            <span class="en">ABOUT</span>
+            <span class="ja">私たちについて</span>
+          </h2>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
       </section>
       <section id="business" class="wrapper">
-        <div class="business_text">
-          <div class="title">
-            <h1>BUSINESS</h1>
-            <h2>事業内容</h2>
-          </div>
-          <div class="title_bar"></div>
-        </div>
+        <h2 class="section-title">
+          <span class="en">BUSINESS</span>
+          <span class="ja">事業内容</span>
+        </h2>
         <div class="business_img_flex">
           <div class="business_img_left">
-            <li>Web制作・マーケティング</li>
+            <div class="item">
+              <p class="title">Web制作・マーケティング</p>
               <img src="https://placehold.jp/380x250.png" alt="メニュー画像">
-            <li>インターネットメディア事業</li>
+            </div>
+            <div class="item">
+              <p class="title">インターネットメディア事業</p>
               <img src="https://placehold.jp/380x250.png" alt="メニュー画像">
+            </div>
           </div>
           <div class="business_img_right">
-            <li>プロモーション企画・制作</li>
+            <div class="item">
+              <p class="title">プロモーション企画・制作</p>
               <img src="https://placehold.jp/380x250.png" alt="メニュー画像">
-            <li>ソーシャル企画・運営</li>
+            </div>
+            <div class="item">
+              <p class="title">ソーシャル企画・運営</p>
               <img src="https://placehold.jp/380x250.png" alt="メニュー画像">
+            </div>
           </div>
         </div>
       </section>
       <section id="company" class="wrapper">
         <div class="company_text">
-          <div class="title">
-            <h1>COMPANY</h1>
-            <h2>会社情報</h2>
-          </div>
-          <div class="title_bar"></div>
+          <h2 class="section-title">
+            <span class="en">COMPANY</span>
+            <span class="ja">会社情報</span>
+          </h2>
           <dl class="company_date">
             <dt>会社名</dt>
             <dd>ウェブエンターテイメントデザイン株式会社</dd>
@@ -121,12 +127,9 @@
             <dd>3,000,000円</dd>
             <dt>事業内容</dt>
             <dd>Web制作・マーケティング</dd>
-            <dt></dt>
-            <dd>インターネットメディア事業</dd>
-            <dt></dt>
-            <dd>プロモーション企画・制作</dd>
-            <dt></dt>
-            <dd>ソーシャル企画・運営</dd>
+            <dd class="add">インターネットメディア事業</dd>
+            <dd class="add">プロモーション企画・制作</dd>
+            <dd class="add">ソーシャル企画・運営</dd>
           </dl>
         </div>
         <div class="company_img">
@@ -137,15 +140,15 @@
     <footer>
       <div class="wrapper">
         <div class="footer_flex">
-          <div class="footer_img">
+          <div class="logo">
             <img src="https://placehold.jp/110x45.png" alt="ロゴ画像">
           </div>
           <div class="address">
             <p>Web Entertainment Design Inc.<br>
             West Building 3F<br>
             9-99 Sakuragaokacho Shibuya-ku<br>
-            Tokyo, Japan 150-0031<br>
-            T/99-9999-9999</p>
+            Tokyo, Japan 150-0031</p>
+            <p>T/99-9999-9999</p>
           </div>
         </div>
         <p class="copyright">© Web Entertainment Design Inc.</p>
