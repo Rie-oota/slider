@@ -1,0 +1,317 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: black;
+  background-color: beige;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: beige;
+  height: 77px;
+}
+
+nav img {
+  margin-left: 100px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  background-color: black;
+  padding: 30px 70px;
+}
+
+ul {
+  display: flex;
+  justify-content:space-between;
+  list-style: none;
+}
+
+ul li a {
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+ul li a {
+  color: black;
+}
+
+.keyvisual img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 100px;
+}
+
+#news {
+  margin-bottom: 100px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.title_bar {
+  width: 50px;
+  border-bottom: solid 1px;
+}
+
+.news_list {
+  display: flex;
+  margin-top: 60px;
+}
+
+.topics {
+  border-right: solid 1px;
+  margin-left: 20px;
+}
+
+.topics:first-child {
+  margin-left: 0;
+}
+
+.topics:last-child {
+  border-right: none;
+}
+
+.topics_flex {
+  display: flex;
+}
+
+.topics h3 {
+  font-weight: normal;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.topics h4 {
+  line-height: 1px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #fff;
+  padding: 9px;
+  height: 4px;
+  background-color: black;
+}
+
+.topics h5 {
+  font-weight: normal;
+  font-size: 14px;
+  margin-right: 90px;
+  margin-top: 10px;
+}
+
+#about {
+  display: flex;
+}
+
+.about_img {
+  padding-bottom: 100px;
+  width: 55%;
+}
+
+.about_img img {
+  object-fit: cover;
+}
+
+.about_content {
+  width: 45%;
+  padding: 100px 5%;
+}
+
+.about_text {
+  padding-top: 50px;
+}
+
+.about_text p {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.business_img_flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.business_img_left {
+  padding-right: 60px;
+  padding-top: 170px;
+}
+
+.business_img_right {
+  padding-top: 70px;
+}
+
+.business_img_flex img {
+  padding-bottom: 50px;
+}
+
+li {
+  padding-bottom: 5px;
+  list-style: none;
+}
+
+.business_img_flex li::before {
+  content: "-";
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+#company {
+  display: flex;
+  position: relative;
+}
+
+.company_text {
+  padding: 100px 60px;
+  width: 600px;
+  background-color:#fff;
+  margin-bottom: 150px;
+}
+
+.company_date {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+dt {
+  width: 20%;
+}
+
+dd {
+  width: 80%;
+}
+
+.company_img {
+  position: absolute;
+  left: 500px;
+  top: 80px;
+}
+
+footer {
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.footer_flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.footer_img {
+  margin: auto 0;
+}
+
+.address {
+  font-size: 14px;
+}
+
+.copyright {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav img {
+    margin-left: 40px;
+  }
+  .btn {
+    display: none;
+  }
+  .keyvisual img {
+    height: 600px;
+  }
+  .wrapper {
+    padding: 50px 5% 0;
+  }
+  .news_list {
+    flex-direction: column;
+  }
+  .topics {
+    margin-bottom: 30px;
+    margin-left: 0;
+    border-right: none;
+  }
+  #about {
+    flex-direction: column;
+  }
+  .about_img {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .about_content {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .business_img_flex {
+    flex-direction: column;
+  }
+  .business_img_left {
+    padding: 50px 0 0;
+  }
+  .business_img_right {
+    padding: 0;
+  }
+  #company {
+    flex-direction: column;
+  }
+  .company_text {
+    width: 100%;
+    padding: 30px 5%;
+    margin-bottom: 50px;
+  }
+  .company_date {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  dt {
+    width: 100%;
+  }
+  dd {
+    width: 100%;
+    margin-left: 10px;
+  }
+  .company_img {
+    position: static;
+  }
+  .footer_flex {
+    flex-direction: column;
+  }
+}
