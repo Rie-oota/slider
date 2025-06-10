@@ -1,0 +1,275 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  color: #fff;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+body {
+  color: black;
+  background-color: #f0f0f0;
+  font-size: 0.875rem;
+}
+
+header {
+  background-image: url(https://placehold.jp/1500x750.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+  height: 750px;
+  writing-mode: vertical-rl;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1500px;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 40px;
+}
+
+header h1 a {
+  font-size: 40px;
+}
+
+li {
+  list-style: none;
+}
+
+header li {
+  margin: 40px 0 20px 20px;
+}
+
+.btn_box {
+  background-color: gray;
+  width: 80px;
+  height: 250px;
+  position: absolute;
+  bottom: 20px;
+  left: 30px
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 230px;
+  background-color: gray;
+  border: solid 1px #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.btn:hover {
+  color: gainsboro;
+  border-color: gainsboro;
+}
+
+#news {
+  writing-mode: vertical-rl;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.section-title {
+  writing-mode: vertical-rl;
+}
+
+#news .section-title {
+  margin-left: 100px;
+}
+
+#news .section-title .ja {
+  display: block;
+}
+
+.section-title .ja {
+  font-size: 2.25rem;
+}
+
+.news_list {
+  margin-top: 70px;
+}
+
+.news_list li {
+  width: calc(100% / 5);
+  border-right: solid 1px #000;
+  padding: 15px 30px;
+}
+
+.news_list li:last-child {
+  border-left: solid 1px #000;
+}
+
+#products1 {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 10%;
+  margin-bottom: 120px;
+}
+
+#products1 img {
+  margin-top: 100px;
+  margin-right: 10px;
+}
+
+.item {
+  position: relative;
+}
+
+#products1 p {
+  position: absolute;
+  bottom: -20px;
+  left: -25px;
+  padding: 50px 120px;
+  font-size: 16px;
+  background-color: yellow;
+  opacity: 0.5;
+  color: #fff;
+  text-align: center;
+}
+
+#products2 {
+  display: flex;
+  padding-left: 10%;
+  margin-bottom: 120px;
+}
+
+#products2 img {
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+#products2 p {
+  position: absolute;
+  bottom: -20px;
+  right: -25px;
+  padding: 50px 120px;
+  font-size: 16px;
+  background-color: brown;
+  opacity: 0.5;
+  color: #fff;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+}
+
+footer {
+  background-color: #000;
+}
+
+.footer_flex {
+  writing-mode: vertical-rl;
+  width: 100%;
+  padding: 50px 40px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer h1 {
+  color: #fff;
+  font-size: 40px;
+  margin-left: 60px;
+}
+
+.footer_flex p {
+  font-size: 15px;
+  margin-left: 60px;
+  text-align: left;
+}
+
+footer li {
+  margin-left: 20px;
+}
+
+.online_store {
+  padding-bottom: 5px;
+  border-bottom: solid 1px #fff;
+}
+
+footer p {
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    background-size: 100% 800px;
+  }
+  #news .section-title {
+    margin-left: 50px;
+  }
+  .news_list li:nth-of-type(n + 4) {
+    display: none;
+  }
+  .news_list li {
+    width: calc(100% / 3);
+    padding: 15px 10px;
+  }
+  .news_list li:nth-child(3) {
+  border-left: solid 1px #000;
+  }
+  .wrapper {
+    max-width: 100%;
+  }
+  .section-title .ja {
+    font-size: 25px;
+  }
+  #products1 .section-title .en {
+    display: none;
+  }
+  #products1 img {
+    width: 90%;
+  }
+  #products1 p {
+    width: 60%;
+    padding: 30px 0;
+    font-size: 14px;
+  }
+  #products2 .section-title .en {
+    display: none;
+  }
+  #products2 img {
+    width: 90%;
+  }
+  #products2 p {
+    width: 60%;
+    padding: 30px 0;
+    font-size: 14px;
+  }
+  .footer_flex {
+    padding: 30px 0 0 20px;
+  }
+  footer h1 {
+    margin-left: 20px;
+  }
+  .footer_flex p {
+    margin-left: 20px;
+  }
+  footer li {
+    margin-left: 10px;
+  }
+}
