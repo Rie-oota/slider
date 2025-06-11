@@ -1,0 +1,30 @@
+.key-visual {
+  position: relative;
+}
+
+.key-visualset {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 200px;
+}
+
+.button-style {
+  position: absolute;
+  top: 40%;
+  background-color: bisque;
+  border-radius: 50%;
+  border:none;
+  padding: 10px;
+}
+
+.button-left {
+  position: absolute;
+  left: -20%;
+}
+
+.button-right {
+  position: absolute;
+  left: 110%;
+}
