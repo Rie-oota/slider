@@ -3,53 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="slider.css">
+        <link rel="stylesheet" href="./css/slider.css">
         <title>Document</title>
         </head>
     <body>
         <div class="key-visual">
             <div class="key-visualset">
                 <input type="button" value="〈  " class="button-style button-left" onclick="go_back()">
-                <img id="picture" src="spring.jpg" width="400" height="300">
+                <img id="picture" src="./image/spring.jpg" width="400" height="300">
                 <input type="button" value="  〉" class="button-style button-right" onclick="go_forward()">
-                <script>
-                    var picture_src = new Array("spring.jpg","summer.jpg","fall.jpg","winter.jpg");
-                    var num = -1;
-
-                    slideshow_timer();
-
-                    function slideshow_timer(){
-                    if (num == 3){
-                        num = 0;
-                    } 
-                    else {
-                        num ++;
-                    }
-                    document.getElementById("picture").src=picture_src[num];
-                    setTimeout("slideshow_timer()",5000); 
-                    }
-
-                    function go_forward(){
-                        if (num == 3) {
-                            num = 0;
-                        }
-                        else {
-                            num ++;
-                        }
-                        document.getElementById("picture").src=picture_src[num];
-                    }
-
-                    function go_back(){
-                        if (num == 0) {
-                            num = 3;
-                        }
-                        else {
-                            num --;
-                        }
-                        document.getElementById("picture").src=picture_src[num];
-                    }
-                </script>
             </div>
         </div>
+        <script src="./js/slider.js"></script>
     </body>
 </html>
