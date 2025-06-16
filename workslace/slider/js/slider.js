@@ -1,5 +1,5 @@
 // 表示させたい画像を格納する
-const picture_src = ["./image/spring.jpg", "./image/summer.jpg", "./image/fall.jpg", "./image/winter.jpg"];
+const pictureSrc = ["./image/spring.jpg", "./image/summer.jpg", "./image/fall.jpg", "./image/winter.jpg"];
 // 現在のスライドインデックス
 let pictureNum = -1;
 // タイマーをグローバルで管理
@@ -8,8 +8,8 @@ let timer;
 // 共通のスライド切り替えロジック
 function changeSlide(direction) {
   // インデックスを循環させる
-  pictureNum = (pictureNum + direction + picture_src.length) % picture_src.length;
-  document.getElementById("picture").src = picture_src[pictureNum];
+  pictureNum = (pictureNum + direction + pictureSrc.length) % pictureSrc.length;
+  document.getElementById("picture").src = pictureSrc[pictureNum];
 }
 
 // 自動再生機能
